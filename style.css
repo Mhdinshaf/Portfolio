@@ -1,0 +1,71 @@
+/* --- 1. SETTINGS & COLORS --- */
+:root {
+    --bg-color: #050505;       /* Deep Black */
+    --card-bg: #121212;        /* Dark Grey Cards */
+    --text-main: #ffffff;
+    --text-muted: #a0a0a0;
+    
+    /* THEME: Purple & Pink Gradient */
+    --gradient-1: #7928ca;
+    --gradient-2: #ff0080;
+    --accent-glow: rgba(121, 40, 202, 0.5);
+}
+
+* { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Outfit', sans-serif; }
+
+body {
+    background-color: var(--bg-color);
+    color: var(--text-main);
+    overflow-x: hidden;
+}
+
+html { scroll-behavior: smooth; }
+
+/* --- 2. NAVIGATION --- */
+nav {
+    display: flex; justify-content: space-between; align-items: center;
+    padding: 20px 50px; position: fixed; width: 100%; top: 0; z-index: 100;
+    transition: 0.3s;
+}
+nav.scrolled {
+    background: rgba(5, 5, 5, 0.8);
+    backdrop-filter: blur(10px);
+    padding: 15px 50px;
+}
+
+.logo { font-weight: 900; font-size: 1.5rem; letter-spacing: 1px; }
+.logo span { color: var(--gradient-2); }
+
+.nav-links a {
+    color: var(--text-main); text-decoration: none; margin-left: 30px;
+    font-size: 1rem; font-weight: 500; transition: 0.3s;
+}
+.nav-links a:hover { color: var(--gradient-2); }
+
+.menu-icon { display: none; font-size: 1.5rem; cursor: pointer; }
+
+/* Mobile Menu */
+.mobile-menu {
+    position: fixed; top: 0; right: 0; height: 100vh; width: 250px;
+    background: var(--card-bg); z-index: 99; padding-top: 80px;
+    transform: translateX(100%); transition: 0.3s;
+    display: flex; flex-direction: column; align-items: center;
+}
+.mobile-menu.active { transform: translateX(0); }
+.mobile-link { color: #fff; text-decoration: none; font-size: 1.2rem; margin: 20px 0; }
+
+/* --- 3. HERO SECTION --- */
+.hero {
+    min-height: 100vh; display: flex; align-items: center; justify-content: space-between;
+    padding: 0 10%; position: relative;
+
+    
+}
+/* Background Glows */
+.glow-blob {
+    position: absolute; width: 400px; height: 400px;
+    background: linear-gradient(45deg, var(--gradient-1), var(--gradient-2));
+    filter: blur(150px); opacity: 0.2; border-radius: 50%; z-index: -1;
+}
+.blob-1 { top: -100px; left: -100px; }
+.blob-2 { bottom: -50px; right: -50px; }
