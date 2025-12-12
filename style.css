@@ -189,6 +189,60 @@ h1 {
     filter: brightness(100%);
 }
 
+/* Projects Grid */
+.projects-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(350px, 1fr)); gap: 30px; }
+.project-card {
+    background: var(--card-bg); border-radius: 20px; overflow: hidden;
+    border: 1px solid rgba(255,255,255,0.05); transition: 0.4s;
+}
+.project-card:hover { transform: translateY(-10px); border-color: var(--gradient-2); }
+.project-img { height: 250px; background-size: cover; background-position: center; }
+.p-img-1 { background-image: url('https://placehold.co/600x400/121212/222222'); }
+.p-img-2 { background-image: url('https://placehold.co/600x400/121212/222222'); }
+.project-info { padding: 25px; }
+.tags { display: flex; gap: 10px; margin-bottom: 15px; }
+.tag { font-size: 0.75rem; padding: 5px 12px; border-radius: 20px; background: rgba(255,255,255,0.1); color: var(--text-muted); }
+.project-link { color: var(--gradient-2); font-weight: 700; text-decoration: none; }
+
+.hidden-project { display: none; }
+
+* Contact Section */
+.contact-container { display: flex; flex-wrap: wrap; gap: 50px; justify-content: center; align-items: flex-start; }
+.contact-info { flex: 1; min-width: 300px; }
+.contact-info h3 { font-size: 2rem; margin-bottom: 15px; color: #fff; }
+.contact-info p { color: var(--text-muted); margin-bottom: 30px; line-height: 1.6; }
+.info-item { display: flex; align-items: center; margin-bottom: 20px; color: #fff; font-size: 1.1rem; }
+.info-item i { color: var(--gradient-2); margin-right: 15px; font-size: 1.2rem; }
+
+.contact-form {
+    flex: 1; min-width: 300px; background: rgba(255,255,255,0.05);
+    padding: 30px; border-radius: 20px; border: 1px solid rgba(255,255,255,0.1);
+}
+.form-group { margin-bottom: 20px; }
+.form-group input, .form-group textarea {
+    width: 100%; padding: 15px; background: rgba(0,0,0,0.5);
+    border: 1px solid rgba(255,255,255,0.1); border-radius: 10px;
+    color: #fff; font-size: 1rem; outline: none; transition: 0.3s;
+}
+.form-group input:focus, .form-group textarea:focus { border-color: var(--gradient-1); box-shadow: 0 0 10px var(--accent-glow); }
+
+/* Footer */
+footer {
+    background: #000; padding: 60px 10% 20px; border-top: 1px solid rgba(255, 255, 255, 0.1); margin-top: 50px;
+}
+.footer-content { display: flex; flex-direction: column; align-items: center; text-align: center; margin-bottom: 40px; }
+.footer-content h3 { font-size: 2rem; margin-bottom: 10px; background: linear-gradient(to right, var(--gradient-2), var(--gradient-1)); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+.footer-content p { color: var(--text-muted); font-size: 1rem; max-width: 500px; }
+.footer-socials { margin-top: 20px; }
+.footer-socials a {
+    display: inline-flex; justify-content: center; align-items: center;
+    width: 40px; height: 40px; margin: 0 10px;
+    background: rgba(255, 255, 255, 0.1); border-radius: 50%;
+    color: #fff; text-decoration: none; transition: 0.3s;
+}
+.footer-socials a:hover { background: var(--gradient-1); transform: translateY(-5px); }
+.footer-bottom { text-align: center; padding-top: 20px; border-top: 1px solid rgba(255, 255, 255, 0.05); font-size: 0.8rem; color: var(--text-muted); }
+
 /* Animations & Mobile */
 @keyframes spin { 100% { transform: rotate(360deg); } }
 @keyframes float { 0%, 100% { transform: translateY(0); } 50% { transform: translateY(-15px); } }
