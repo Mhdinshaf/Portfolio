@@ -1,159 +1,341 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Mhd Inshaf | Full Stack Developer</title>
-    
-    <link rel="stylesheet" href="style.css">
-    
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;500;700;900&display=swap" rel="stylesheet">
-</head>
-<body>
-      <div class="glow-blob blob-1"></div>
+
+    <link rel="stylesheet" href="style.css" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="glow-blob blob-1"></div>
     <div class="glow-blob blob-2"></div>
 
     <nav id="navbar">
-        <div class="logo">Mhd<span>Inshaf</span></div>
-        <div class="nav-links">
-            <a href="#home">Home</a>
-            <a href="#skills">Skills</a>
-            <a href="#projects">Work</a>
-        </div>
-        <div class="menu-icon" id="menu-btn">
-            <i class="fas fa-bars"></i>
-        </div>
+      <div class="logo">Mhd<span>Inshaf</span></div>
+      <div class="nav-links">
+        <a href="#home">Home</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Work</a>
+      </div>
+      <div class="menu-icon" id="menu-btn">
+        <i class="fas fa-bars"></i>
+      </div>
     </nav>
-    
+
     <div class="mobile-menu" id="mobile-menu">
-        <a href="#home" class="mobile-link">Home</a>
-        <a href="#skills" class="mobile-link">Skills</a>
-        <a href="#projects" class="mobile-link">Work</a>
-        <a href="#contact" class="mobile-link">Contact</a>
+      <a href="#home" class="mobile-link">Home</a>
+      <a href="#skills" class="mobile-link">Skills</a>
+      <a href="#projects" class="mobile-link">Work</a>
+      <a href="#contact" class="mobile-link">Contact</a>
     </div>
 
     <section class="hero" id="home">
-        <div class="hero-text">
-            <h1>Hi, I'm <br><span class="gradient-text">Mohomed Inshaf</span></h1>
-            <p class="subtitle">
-                Passionate Full Stack Developer | Java & Angular Enthusiast. I build scalable enterprise solutions and dynamic digital experiences using Spring Boot, Angular, and modern web technologies.
-            </p>
-            <div class="btn-group">
-                <a href="#projects" class="btn btn-primary">View My Work</a>
-                <a href="javascript:void(0)" id="contact-btn" class="btn btn-secondary">Contact Me</a>
-            </div>
-            
-            <div class="social-icons" id="social-links">
-                <a href="https://github.com/Mhdinshaf" target="_blank"><i class="fab fa-github"></i></a>
-                <a href="https://linkedin.com/in/mohomed-inshaf03" target="_blank"><i class="fab fa-linkedin"></i></a>
-                <a href="mailto:mwaseer03@gmail.com"><i class="fas fa-envelope"></i></a>
-            </div>
+      <div class="hero-text">
+        <h1>Hi, I'm <br /><span class="gradient-text">Mohomed Inshaf</span></h1>
+        <p class="subtitle">
+          Passionate Full Stack Developer | Java & Angular Enthusiast. I build
+          scalable enterprise solutions and dynamic digital experiences using
+          Spring Boot, Angular, and modern web technologies.
+        </p>
+        <div class="btn-group">
+          <a href="#projects" class="btn btn-primary">View My Work</a>
+          <a
+            href="javascript:void(0)"
+            id="contact-btn"
+            class="btn btn-secondary"
+            >Contact Me</a
+          >
         </div>
 
-        <div class="hero-img-container">
-            <div class="img-border"></div>
-            <div class="hero-img"></div> 
-            
-            <div class="float-card card-1">
-                <i class="fas fa-code"></i>
-                <div>
-                    <h4>Full Stack</h4>
-                    <p>Developer</p>
-                </div>
-            </div>
-            <div class="float-card card-2">
-                <i class="fas fa-project-diagram"></i>
-                <div>
-                    <h4>26+</h4>
-                    <p>GitHub Repos</p>
-                </div>
-            </div>
+        <div class="social-icons hidden" id="social-links">
+          <a href="https://github.com/Mhdinshaf" target="_blank"
+            ><i class="fab fa-github"></i
+          ></a>
+          <a href="https://linkedin.com/in/mohomed-inshaf03" target="_blank"
+            ><i class="fab fa-linkedin"></i
+          ></a>
+          <a href="mailto:mwaseer03@gmail.com"
+            ><i class="fas fa-envelope"></i
+          ></a>
         </div>
+      </div>
+
+      <div class="hero-img-container">
+        <div class="img-border"></div>
+        <div class="hero-img"></div>
+
+        <div class="float-card card-1">
+          <i class="fas fa-code"></i>
+          <div>
+            <h4>Full Stack</h4>
+            <p>Developer</p>
+          </div>
+        </div>
+        <div class="float-card card-2">
+          <i class="fas fa-project-diagram"></i>
+          <div>
+            <h4>26+</h4>
+            <p>GitHub Repos</p>
+          </div>
+        </div>
+      </div>
     </section>
 
     <section class="section" id="skills">
-        <h2 class="section-title"><span>My Arsenal</span></h2>
-        <div class="skills-grid">
-            <div class="skill-card"><i class="fab fa-java"></i><h3>Java</h3></div>
+      <h2 class="section-title"><span>My Arsenal</span></h2>
+
+      <div class="skills-container">
+        <div class="skill-category">
+          <h3><i class="fas fa-laptop-code"></i> Frontend</h3>
+          <div class="skills-grid">
             <div class="skill-card">
-                <img src="img/spring.png" class="skill-icon" alt="Spring Boot" style="width:40px; margin-bottom:10px;">
-                <h3>Spring Boot</h3>
+              <i class="fab fa-angular"></i>
+              <p>Angular 21</p>
             </div>
-            <div class="skill-card"><i class="fab fa-angular"></i><h3>Angular</h3></div>
-            <div class="skill-card"><span style="font-size: 2rem; font-weight: bold; color: #3178C6;">TS</span><h3>TypeScript</h3></div>
-            <div class="skill-card"><i class="fab fa-react"></i><h3>React.js</h3></div>
-            <div class="skill-card"><i class="fab fa-js"></i><h3>JavaScript</h3></div>
-            <div class="skill-card"><i class="fab fa-html5"></i><h3>HTML/CSS</h3></div>
-            <div class="skill-card"><i class="fas fa-wind"></i><h3>Tailwind CSS</h3></div>
-            <div class="skill-card"><i class="fas fa-database"></i><h3>MySQL</h3></div>
-            <div class="skill-card"><i class="fab fa-jira"></i><h3>Jira / Scrum</h3></div>
+            <div class="skill-card">
+              <i class="fab fa-react"></i>
+              <p>React</p>
+            </div>
+            <div class="skill-card">
+              <i class="fab fa-js"></i>
+              <p>TypeScript / JS</p>
+            </div>
+            <div class="skill-card">
+              <i class="fas fa-wind"></i>
+              <p>Tailwind CSS</p>
+            </div>
+          </div>
         </div>
+
+        <div class="skill-category">
+          <h3><i class="fas fa-server"></i> Backend</h3>
+          <div class="skills-grid">
+            <div class="skill-card">
+              <i class="fab fa-java"></i>
+              <p>Java</p>
+            </div>
+            <div class="skill-card">
+              <img src="img/spring.png" style="width: 30px" alt="Spring" />
+              <p>Spring Boot</p>
+            </div>
+            <div class="skill-card">
+              <h3 style="margin: 0">H</h3>
+              <p>Hibernate</p>
+            </div>
+            <div class="skill-card">
+              <i class="fas fa-network-wired"></i>
+              <p>REST APIs</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="skill-category">
+          <h3><i class="fas fa-database"></i> Databases</h3>
+          <div class="skills-grid">
+            <div class="skill-card">
+              <i class="fas fa-database"></i>
+              <p>MySQL</p>
+            </div>
+            <div class="skill-card">
+              <i class="fas fa-database"></i>
+              <p>PostgreSQL</p>
+            </div>
+            <div class="skill-card">
+              <i class="fas fa-leaf"></i>
+              <p>MongoDB</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="skill-category">
+          <h3><i class="fas fa-tools"></i> Tools</h3>
+          <div class="skills-grid">
+            <div class="skill-card">
+              <i class="fab fa-github"></i>
+              <p>Git / GitHub</p>
+            </div>
+            <div class="skill-card">
+              <i class="fab fa-docker"></i>
+              <p>Docker</p>
+            </div>
+            <div class="skill-card">
+              <i class="fab fa-jira"></i>
+              <p>Jira (Scrum)</p>
+            </div>
+            <div class="skill-card">
+              <i class="fas fa-shield-alt"></i>
+              <p>Offensive Security</p>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
 
     <section class="section" id="projects">
-        <h2 class="section-title"><span>Featured Works</span></h2>
-        
-        <div class="projects-grid">
-            <div class="project-card">
-                <div class="project-img p-img-1" style="background-image: url('https://placehold.co/600x400/222/555?text=VibeIt.lk');"></div>
-                <div class="project-info">
-                    <div class="tags"><span class="tag">Angular 21</span><span class="tag">Spring Boot</span></div>
-                    <h3>VibeIt.lk E-Commerce</h3>
-                    <p>A multi-vendor platform with a unique reward-based customer earnings model.</p>
-                    <a href="https://github.com/Mhdinshaf" target="_blank" class="project-link">View Project <i class="fas fa-arrow-right"></i></a>
-                </div>
-            </div>
-            
-            <div class="project-card">
-                <div class="project-img p-img-2" style="background-image: url('https://placehold.co/600x400/111/444?text=DMT+Tracker');"></div>
-                <div class="project-info">
-                    <div class="tags"><span class="tag">React</span><span class="tag">Jira</span></div>
-                    <h3>DMT Productivity Tracker</h3>
-                    <p>Real-time workflow monitoring dashboard developed for the Department of Motor Traffic.</p>
-                    <a href="https://github.com/Mhdinshaf" target="_blank" class="project-link">View Project <i class="fas fa-arrow-right"></i></a>
-                </div>
-            </div>
+      <h2 class="section-title"><span>Featured Works</span></h2>
 
-            <div class="project-card hidden-project">
-                <div class="project-img" style="background-image: url('https://placehold.co/600x400/333/666?text=Warehouse+System');"></div>
-                <div class="project-info">
-                    <div class="tags"><span class="tag">Spring Boot</span><span class="tag">MySQL</span></div>
-                    <h3>Inventory Management</h3>
-                    <p>Enterprise-grade warehouse solution with layered architecture and secure REST APIs.</p>
-                    <a href="https://github.com/Mhdinshaf" target="_blank" class="project-link">View Project <i class="fas fa-arrow-right"></i></a>
-                </div>
+      <div class="projects-grid">
+        <div class="project-card">
+          <div
+            class="project-img p-img-1"
+            style="
+              background-image: url(&quot;https://placehold.co/600x400/222/555?text=VibeIt.lk&quot;);
+            "
+          ></div>
+          <div class="project-info">
+            <div class="tags">
+              <span class="tag">Angular 21</span
+              ><span class="tag">Spring Boot</span>
             </div>
+            <h3>VibeIt.lk E-Commerce</h3>
+            <p>
+              A multi-vendor platform with a unique reward-based customer
+              earnings model.
+            </p>
+            <a
+              href="https://github.com/Mhdinshaf"
+              target="_blank"
+              class="project-link"
+              >View Project <i class="fas fa-arrow-right"></i
+            ></a>
+          </div>
+        </div>
 
-            <div class="project-card hidden-project">
-                <div class="project-img" style="background-image: url('https://placehold.co/600x400/444/777?text=MovieRat');"></div>
-                <div class="project-info">
-                    <div class="tags"><span class="tag">JavaScript</span><span class="tag">REST API</span></div>
-                    <h3>MovieRat Catalog</h3>
-                    <p>Dynamic web application that fetches and renders real-time movie metadata.</p>
-                    <a href="https://github.com/Mhdinshaf/MovieRat" target="_blank" class="project-link">View Project <i class="fas fa-arrow-right"></i></a>
-                </div>
+        <div class="project-card">
+          <div
+            class="project-img"
+            style="
+              background-image: url(&quot;https://placehold.co/600x400/111/444?text=EECP+Chat&quot;);
+            "
+          ></div>
+          <div class="project-info">
+            <div class="tags">
+              <span class="tag">Spring Boot</span
+              ><span class="tag">WebSocket</span>
             </div>
+            <h3>EECP Real-time Chat</h3>
+            <p>
+              A secure real-time communication platform built for seamless
+              enterprise collaboration.
+            </p>
+            <a
+              href="https://github.com/Mhdinshaf"
+              target="_blank"
+              class="project-link"
+              >View Project <i class="fas fa-arrow-right"></i
+            ></a>
+          </div>
         </div>
-        <div style="text-align: center; margin-top: 50px;">
-            <button id="show-more-btn" class="btn btn-secondary">Show More</button>
+
+        <div class="project-card">
+          <div
+            class="project-img"
+            style="
+              background-image: url(&quot;https://placehold.co/600x400/333/666?text=SaaS+Platform&quot;);
+            "
+          ></div>
+          <div class="project-info">
+            <div class="tags">
+              <span class="tag">Angular</span
+              ><span class="tag">Spring Cloud</span>
+            </div>
+            <h3>Cloud SaaS Solution</h3>
+            <p>
+              Scalable Software-as-a-Service platform featuring robust
+              multi-tenancy support.
+            </p>
+            <a
+              href="https://github.com/Mhdinshaf"
+              target="_blank"
+              class="project-link"
+              >View Project <i class="fas fa-arrow-right"></i
+            ></a>
+          </div>
         </div>
+
+        <div class="project-card hidden-project">
+          <div
+            class="project-img"
+            style="
+              background-image: url(&quot;https://placehold.co/600x400/444/777?text=POS+System&quot;);
+            "
+          ></div>
+          <div class="project-info">
+            <div class="tags">
+              <span class="tag">Java</span><span class="tag">MySQL</span>
+            </div>
+            <h3>Advanced POS System</h3>
+            <p>
+              Comprehensive Point of Sale system with inventory tracking and
+              detailed sales analytics.
+            </p>
+            <a
+              href="https://github.com/Mhdinshaf"
+              target="_blank"
+              class="project-link"
+              >View Project <i class="fas fa-arrow-right"></i
+            ></a>
+          </div>
+        </div>
+
+        <div class="project-card hidden-project">
+          <div
+            class="project-img p-img-2"
+            style="
+              background-image: url(&quot;https://placehold.co/600x400/555/888?text=DMT+Tracker&quot;);
+            "
+          ></div>
+          <div class="project-info">
+            <div class="tags">
+              <span class="tag">React</span><span class="tag">Jira</span>
+            </div>
+            <h3>DMT Productivity Tracker</h3>
+            <p>
+              Real-time workflow monitoring dashboard developed for the
+              Department of Motor Traffic.
+            </p>
+            <a
+              href="https://github.com/Mhdinshaf"
+              target="_blank"
+              class="project-link"
+              >View Project <i class="fas fa-arrow-right"></i
+            ></a>
+          </div>
+        </div>
+      </div>
+      <div style="text-align: center; margin-top: 50px">
+        <button id="show-more-btn" class="btn btn-secondary">Show More</button>
+      </div>
     </section>
 
     <footer>
-        <div class="footer-content">
-            <h3>Get in Touch</h3>
-            <p>Building digital experiences that matter.</p>
-            <div class="footer-socials">
-                <a href="https://github.com/Mhdinshaf" target="_blank"><i class="fab fa-github"></i></a>
-                <a href="https://linkedin.com/in/mohomed-inshaf03" target="_blank"><i class="fab fa-linkedin-in"></i></a>
-            </div>
+      <div class="footer-content">
+        <h3>Get in Touch</h3>
+        <p>Building digital experiences that matter.</p>
+        <div class="footer-socials">
+          <a href="https://github.com/Mhdinshaf" target="_blank"
+            ><i class="fab fa-github"></i
+          ></a>
+          <a href="https://linkedin.com/in/mohomed-inshaf03" target="_blank"
+            ><i class="fab fa-linkedin-in"></i
+          ></a>
         </div>
-        <div class="footer-bottom">
-            <p>&copy; 2026 Mohomed Inshaf. All rights reserved.</p>
-        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 Mohomed Inshaf. All rights reserved.</p>
+      </div>
     </footer>
-    
+
     <script src="script.js"></script>
-</body>
+  </body>
 </html>
